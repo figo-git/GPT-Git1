@@ -1,0 +1,15 @@
+name = "memo-calendar-api"
+main = "src/index.js"
+compatibility_date = "2026-09-27"
+
+[[kv_namespaces]]
+binding = "USERS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+[vars]
+ALLOWED_ORIGIN = "https://REPLACE-WITH-YOUR-GITHUB-USERNAME.github.io"
+GITHUB_API_VERSION = "2026-03-10"
+
+# Optional: Wrangler will fail deployment if these required secrets are missing.
+[secrets]
+required = ["GITHUB_GIST_TOKEN"]
